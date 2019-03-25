@@ -197,7 +197,6 @@ h1, h2, h3, h4, h5 {
   @media(max-width: 800px) {
     .container {
       width: 95%;
-      background: lightblue;
     }
     .container header {
       display: flex;
@@ -231,11 +230,55 @@ h1, h2, h3, h4, h5 {
       margin-bottom: 0px;
     }
 
+    .container .main-content {
+      margin-top: 30px;
+    }
+
+    .container .main-content .middle-img {
+      width: 100%;
+    }
+
   }
 
   @media(max-width: 500px) {
       .container {
-        background: lightgreen;
       }
 
+      .container header {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .container header nav {
+        display: flex; 
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+      }
+      .container header nav a {
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+      }
+
+      .container .main-content .top-content {
+        margin-top: 0px;
+        margin-left: 0px;
+        display: block;
+      }
+
+      .container .main-content .top-content .text-content {
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .container .main-content .bottom-content {
+        display: block;
+      }
+
+      .container .main-content .bottom-content .text-content {
+        width: 100%;
+        margin-top: 30px;
+      }
     }
